@@ -1,0 +1,1069 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-ItalicMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red251\green2\blue7;\red0\green0\blue0;
+\red0\green0\blue0;\red38\green38\blue38;\red255\green255\blue255;\red13\green106\blue184;\red0\green0\blue255;
+\red127\green0\blue128;\red33\green255\blue255;\red33\green255\blue6;\red60\green64\blue68;}
+{\*\expandedcolortbl;;\cssrgb\c1680\c19835\c100000;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;
+\csgray\c0\c0;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c49804\c77255;\cssrgb\c1680\c19835\c100000;
+\cssrgb\c57919\c12801\c57269;\cssrgb\c0\c99144\c100000;\cssrgb\c0\c97680\c0;\cssrgb\c30196\c31765\c33725;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9440\viewh7240\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs22 \cf2 +++ PYTHON +++\
+\cf3 <<< VENV >>>\
+\cf0 /Users/user/code/\cf3 env
+\f1\b0 \cf0 \
+
+\f0\b \cf2 python -m venv environments/\cf4 <virtual environment name> \cf2 -
+\f1\b0 \cf0 > create a virtual environment\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \cb5 \expnd0\expndtw0\kerning0
+source \cf4 VENV-NAME\cf2 /bin/activate
+\f1\b0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 deactivate
+\f1\b0 \cf0  ->  exit out of an active virtual environment\
+python -i -> Accessing the Python Interactive Shell\
+
+\f0\b \cf2 Ctrl-D
+\f1\b0 \cf0  -> exit from Shell\
+!\
+
+\f0\b REPL
+\f1\b0  = Read, Evaluate, Print, Loop -> Py CLI\
+
+\f0\b PIP
+\f1\b0  = Package Manager\
+
+\f0\b \cf2 	pip list\
+	pip install flask\
+	pip show flask
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \expnd0\expndtw0\kerning0
+print([i for i in y if i in x])\'a0
+\f1\b0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 !\
+
+\f0\b \cf2 help(requests.get)
+\f1\b0 \cf0 \
+\
+
+\f0\b \cf2 !\
++++ Git +++
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7 \expnd0\expndtw0\kerning0
+- 
+\f0\b Version Control System\
+- {\field{\*\fldinst{HYPERLINK "https://git-scm.com/"}}{\fldrslt 
+\f1\b0 \cf8 Git}}
+\f1\b0 ,\'a0{\field{\*\fldinst{HYPERLINK "https://www.mercurial-scm.org/"}}{\fldrslt \cf8 Mercurial}},\'a0{\field{\*\fldinst{HYPERLINK "https://subversion.apache.org/"}}{\fldrslt \cf8 Subversion}}\
+- 
+\f0\b Git
+\f1\b0 \'a0is an open source VCS\
+- 
+\f0\b GitHub
+\f1\b0 \'a0is a commercial company that runs the\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/"}}{\fldrslt \cf8 GitHub.com}}\'a0repository, based on Git VCS tech\
+- Git is the 
+\f0\b underlying VCS technology 
+\f1\b0 and utility that is tracking changes\'a0\
+- GitHub is the 
+\f0\b cloud service\'a0
+\f1\b0 \
+- Git computes a 
+\f0\b SHA1 hash
+\f1\b0  of all stored files, trees and commits, and then uses the commit hashes to uniquely refer to individual commits.\
+\
+
+\f0\b \cf3 <<< HOW TO USE !!!>>>\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0 \cf4 \cb1 \kerning1\expnd0\expndtw0 1. GO in the directory to add in GitHub\
+\cf9 su -l mmi\
+chsh -s /bin/zsh\cf4 \
+2. Initiate a NEW Git REPO -> .git is created\
+\cf9 git init\cf0 \
+3. Create README file\
+\cf9 echo "# MySavedGitRepo" >> README.md\cf0 \
+4. Adding FILES to STAGING area\
+git add .\
+5. Commit FILES with message\
+\
+git
+\f0\b \cf2  push -u origin
+\f1\b0 \cf0  readme -> add new branch\
+vi README.md -> update an existing file in thew branch\
+git 
+\f0\b \cf2 commit -am
+\f1\b0 \cf0  "new README"\
+git 
+\f0\b \cf2 push -u origin
+\f1\b0 \cf0  readme\
+!\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7 \expnd0\expndtw0\kerning0
+\
+
+\f0\b \cf3 <<< CMD>>>
+\f1\b0 \cf6 \
+!\
+
+\f0\b \cf2 git config --list\
+git config user.name
+\f1\b0 \cf6 \
+
+\f0\b \cf2 git \'97version\
+man git. 
+\f1\b0 \cf4 > search with
+\f0\b \cf3  \'93/\'94
+\f1\b0 \cf4  and the worrd
+\f0\b \cf2 \
+git help >
+\f1\b0 \cf4  ALL the usual configs
+\f0\b \cf2 \
+git \'97help <COMMAND>\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \ul \ulc4 3 stages of FILES : \ulnone \
+COMMITTED -> MODIFIED -> STAGED\
+Commit : 
+\f1\b0 file saved in Local DB
+\f0\b \
+Modified: 
+\f1\b0 Altered file from Local DB
+\f0\b \
+Staged: 
+\f1\b0 Commit files to Local DB\'92s 
+\f0\b \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \ul 3 stages of Git PROJECT : \cf2 \ulnone \
+\cf4 Working Directory 
+\f1\b0 - Local DB 
+\f0\b \
+Staging Area (index) 
+\f1\b0 - setup changes 
+\f0\b \
+.git directory (Repository)\cf2 \
+\
+==== Working LOCALLY ====\
+\pard\pardeftab720\partightenfactor0
+\cf10 WORKING DIR (git_repo) <> STAGING <> LOCAL REPO\cf2 \
+git init
+\f1\b0 \cf4  - > create a 
+\f0\b NEW
+\f1\b0  empty 
+\f0\b REPO > 
+\f1\b0 go in the DIR where you want to run Git !!!!\cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 git add 
+\f1\b0 \cf6 -> 
+\f0\b Move
+\f1\b0  from 
+\f0\b WORKING
+\f1\b0  dir to 
+\f0\b STAGING
+\f1\b0  -> will be in green
+\f0\b \cf2  \'93git status\'94\
+git add . 
+\f1\b0 \cf4 -> apply to all files from Working dir\
+	-> git 
+\f0\b \cf2 reset . 
+\f1\b0 \cf4  -> git 
+\f0\b \cf2 checkout . 
+\f1\b0 \cf6 \
+
+\f0\b \cf2 git reset
+\f1\b0 \cf6  HEAD -> 
+\f0\b Revert
+\f1\b0  from 
+\f0\b STAGING
+\f1\b0  to 
+\f0\b WORKING
+\f1\b0  \
+
+\f0\b \cf2 git commit -m \'93Message\'94 
+\f1\b0 \cf6 ->  
+\f0\b Move 
+\f1\b0 from 
+\f0\b STAGING
+\f1\b0  to Local 
+\f0\b \cf4 REPO\
+\cf2 git log \cf4 -> 
+\f1\b0 show 
+\f0\b sha1
+\f1\b0 \cf6 \
+
+\f0\b \cf2 git reset (sha1)
+\f1\b0 \cf6  -> 
+\f0\b Revert
+\f1\b0  from Local 
+\f0\b \cf4 REPO
+\f1\b0 \cf6  to 
+\f0\b WORKING
+\f1\b0  dir -> you can use first 5-7 digits from sha1\
+	-> git 
+\f0\b status
+\f1\b0  -> git  
+\f0\b \cf2 checkout \'97 .
+\f1\b0 \cf6  -> git 
+\f0\b status
+\f1\b0  -> git 
+\f0\b log
+\f1\b0 \
+!\
+
+\f0\b \cf2 git checkout -- 
+\f1\b0 \cf6 first.txt  or git 
+\f0\b \cf2 checkout \'97 . 
+\f1\b0 \cf6 > 
+\f0\b \cf3 revert changes
+\f1\b0 \cf6  from file \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 \cb1 \kerning1\expnd0\expndtw0 git checkout -b
+\f1\b0 \cf0  \'93NEW_BRANCH\'94 -> 
+\f0\b \cf3 create a new branch
+\f1\b0 \cf0  - and then switch to it\
+
+\f0\b \cf2 git branch -d 
+\f1\b0 \cf0 new_branch -> 
+\f0\b \cf3 delete
+\f1\b0 \cf0  the branch\
+
+\f0\b \cf2 git log --all --decorate --oneline --graph 
+\f1\b0 \cf0  -> show a nice format for log\cf6 \cb7 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 git config --global \cf3 alias.hist \cf2 "log --all --decorate --oneline --graph" 
+\f1\b0 \cf6 -> adding 
+\f0\b \cf3 alias\
+	-> \cf2 git\cf3  hist\
+\cf2 git branch
+\f1\b0 \cf4  -> checking where you are brach or master\
+
+\f0\b \cf2 git checkout master/new_branch -
+\f1\b0 \cf4 > moving between branch and master\
+
+\f0\b \cf2 git merge \'93new_brach\'94 
+\f1\b0 \cf4 ->
+\f0\b \cf3  merge the changes
+\f1\b0 \cf4  from branch with master\
+!\
+
+\f0\b \cf2 git diff 
+\f1\b0 \cf4 -> verify 
+\f0\b \cf3 diffs
+\f1\b0 \cf4  after updating a file and before adding/commiting\
+	
+\f0\b \cf11 @@ -4,3 
+\f1\b0 \cf4 +4,4 @@ And is corercted now -> 
+\f0\b \cf11 3 lines
+\f1\b0 \cf4  displayed 
+\f0\b \cf11 FROM
+\f1\b0 \cf4  file 
+\f0\b \cf11 starting from line 4 including 
+\f1\b0 \cf4 \
+
+\f0\b \cf2 diff -u <1st file> <2nd file> 
+\f1\b0 \cf4 -> 
+\f0\b \cf3 linux diff
+\f1\b0 \cf4  command\
+\pard\pardeftab720\partightenfactor0
+\cf6 !\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 ==== Working with GIT REPOs ====\
+\pard\pardeftab720\partightenfactor0
+\cf12 LOCAL REPO <> HitHub REPO
+\f1\b0 \cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \cb1 \kerning1\expnd0\expndtw0 git push 
+\f1\b0 \cf0 -> upload from Local REPO to Remote REPO\
+
+\f0\b \cf2 git clone / git pull 
+\f1\b0 \cf0 -> merge from Remote repo to Working DIR\
+git 
+\f0\b \cf2 fetch
+\f1\b0 \cf0  -> download from Remote REPO to Local REPO 
+\f0\b and then
+\f1\b0 \
+git 
+\f0\b \cf2 merge
+\f1\b0 \cf0  -> from Local REPO to WOrking dir\
+!\
+git 
+\f0\b \cf2 add .
+\f1\b0 \cf0  -> git 
+\f0\b \cf2 commit -m
+\f1\b0 \cf0  \'93MESSAGE\'94 -> git 
+\f0\b \cf2 push
+\f1\b0 \cf0  \
+!\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf3 <<<Handling conflicts >>>
+\f1\b0 \cf0 \
+git 
+\f0\b \cf2 status
+\f1\b0 \cf0  -> conflicting file is displayed\
+git 
+\f0\b \cf2 diff
+\f1\b0 \cf0   > added lines from file are displayed\
+git 
+\f0\b \cf2 hist
+\f1\b0 \cf0  -> verify if commit IDs (SHA1) are matching + show that loacal and remote version are different\
+git 
+\f0\b \cf2 diff origin/master
+\f1\b0 \cf0  -> verify the status from local and remote master after applying canges to resolve conflict\
+git 
+\f0\b \cf2 commit -am 
+\f1\b0 \cf0 \'93MSG\'94 -> save in local master\
+git 
+\f0\b \cf2 push
+\f1\b0 \cf0  -> to push in remote master\
+git 
+\f0\b hist
+\f1\b0   -> local and remote are in sync are in the same line > f8ae6de (HEAD -> 
+\f0\b \cf2 readme
+\f1\b0 \cf0 , 
+\f0\b \cf3 origin/readme
+\f1\b0 \cf0 ) new README\
+!\
+!\
+
+\f0\b \cf2 +++ BASH +++\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf4 - CLI shell on many UNIX utilities\
+- 
+\f0\b UNIX OS
+\f1\b0  developed by Open Group - IBM AIX, Solaris, MacOS\
+- 
+\f0\b GNU/Linux 
+\f1\b0 is based on Linux kernel\
+-
+\f0\b  BSD (Berkley System Distrbution) 
+\f1\b0 OpenBSD, FreeSD, MacOS
+\f0\b \cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf3 - bash is the default in MacOS and Linux\cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf4  
+\f0\b \cf2 echo $BASH
+\f1\b0 \cf4  - verify if you run bash\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 man ls 
+\f1\b0 \cf4 -> info ->
+\f0\b \cf2  \'93/\'93 
+\f1\b0 \cf4 usee to search \
+\
+
+\f0\b \cf3 <<< DIRECTORIES & FILES >>>
+\f1\b0 \cf4 \
+
+\f0\b \cf2 mkdir 
+\f1\b0 \cf4 Folder1 Folder2 .
+\f0\b \cf2 .
+\f1\b0 \cf4  - 
+\f0\b create
+\f1\b0  folders
+\f0\b \cf2 \
+rm -r 
+\f1\b0 \cf4 <dir> - 
+\f0\b remove
+\f1\b0  entire directory\
+
+\f0\b \cf2 touch
+\f1\b0 \cf4  <File> - 
+\f0\b create
+\f1\b0  file \
+
+\f0\b \cf2 file
+\f1\b0 \cf4  -> 
+\f0\b show
+\f1\b0  what type is the file\
+
+\f0\b \cf2 cat
+\f1\b0 \cf4  - use 
+\f0\b show
+\f1\b0  in small files\
+
+\f0\b \cf2 less 
+\f1\b0 \cf4 - > 
+\f0\b pager
+\f1\b0  to read a long file \
+	
+\f0\b \cf2 / 
+\f1\b0 \cf4 search\
+	
+\f0\b \cf2 b
+\f1\b0 \cf4  back\
+	
+\f0\b \cf2 space
+\f1\b0 \cf4  fwd\
+	
+\f0\b \cf2 q 
+\f1\b0 \cf4 quit\
+
+\f0\b \cf2 open
+\f1\b0 \cf4  in MacOS to open 
+\f0\b non text files
+\f1\b0 \
+
+\f0\b \cf2 cd \'91 
+\f1\b0 \cf4 Name name
+\f0\b \'92 
+\f1\b0 - open folder with 
+\f0\b SPACE
+\f1\b0  in the name\
+
+\f0\b \cf2 cd
+\f1\b0 \cf4  name\cf2  \\ \cf4 name
+\f0\b \cf2 \
+
+\f1\b0 \cf0 \
+
+\f0\b \cf2 cp ..
+\f1\b0 /Downloads/File
+\f0\b  .
+\f1\b0 \cf0   -> COPY a file from a
+\f0\b  LEVEL UP directory
+\f1\b0  to the local directory and 
+\f0\b RETAIN
+\f1\b0  the name\
+
+\f0\b \cf2 cp ..
+\f1\b0 /Downloads/File1
+\f0\b  
+\f1\b0 File2\cf0 -> COPY a file from a 
+\f0\b LEVEL UP
+\f1\b0  
+\f0\b directoryto
+\f1\b0  the local directory and 
+\f0\b CHANGE
+\f1\b0  the name\
+
+\f0\b \cf2 cp -R Source_Directory Target_Dir.
+\f1\b0 \cf0  -> copy DIR 
+\f0\b with all the files
+\f1\b0  within it \
+
+\f0\b \cf2 cp -R Source_Dir1 Source_Dir2  target_Dir.
+\f1\b0 \cf0  -> copy 
+\f0\b MULTIPLE
+\f1\b0  DIR 
+\f0\b with all the files
+\f1\b0  within it \
+
+\f0\b \cf2 ls -R 
+\f1\b0 \cf0 DIR_NAME -> list the directory with all the files\
+
+\f0\b \cf2 mv
+\f1\b0 \cf0  -> work with 
+\f0\b FILES
+\f1\b0  and 
+\f0\b DIRECTORIES
+\f1\b0 \
+
+\f0\b \cf2 rm
+\f1\b0 \cf0  - > remove 
+\f0\b FILES
+\f1\b0 \
+
+\f0\b \cf2 rmdir
+\f1\b0 \cf0  -> remove 
+\f0\b EMPTy
+\f1\b0  
+\f0\b DIRECTORY
+\f1\b0 \
+
+\f0\b \cf2 rm -r
+\f1\b0 \cf0  -> remove 
+\f0\b all the content 
+\f1\b0 from 
+\f0\b DIRECTORY\
+\
+\cf2 rm -ri \cf0 DIRECTORY
+\f1\b0  -> remove files with ACK
+\f0\b \
+
+\f1\b0 \
+
+\f0\b \cf3 <<< WILDARDS >>>
+\f1\b0 \cf0 \
+
+\f0\b \cf2 ls a*
+\f1\b0 \cf0  -> all files starting with \'91a\'92\
+
+\f0\b \cf2 ls -liahd P*
+\f1\b0 \cf0  -> all folders starting with P and listed\
+
+\f0\b \cf2 mv *txt DIR
+\f1\b0 \cf0  -> move files ,atching txt at the end to a DIRECTORY\
+\
+touch 
+\f0\b \cf2 \{a,b,c\}.
+\f1\b0 \cf0 txt -> touch a.txt b.txt c.txt\
+mv files
+\f0\b ?
+\f1\b0 .
+\f0\b \cf2 \{txt,jpg\}
+\f1\b0 \cf0  -> ? match exactly one character\
+\
+
+\f0\b \cf2 sort
+\f1\b0 \cf0  <FILE> -> sort alph in the 
+\f0\b 1st column
+\f1\b0 \
+
+\f0\b \cf2 sort -nk2
+\f1\b0 \cf0   <FILE> -> sort after
+\f0\b  2nd column/field 
+\f1\b0 after
+\f0\b  numbers
+\f1\b0 \
+
+\f0\b \cf2 sort -r 
+\f1\b0 \cf0 file -> sort in 
+\f0\b REVERSE
+\f1\b0 \
+
+\f0\b \cf2 sort 
+\f1\b0 \cf0 file | uniq  -> sort and display the occurances once\
+
+\f0\b \cf2 sort 
+\f1\b0 \cf0 file | uniq -c  -> sort and display the 
+\f0\b occurances once
+\f1\b0  + 
+\f0\b count
+\f1\b0 \
+\
+
+\f0\b \cf2 ls |head
+\f1\b0 \cf0  -> display 1st 10 lines\
+
+\f0\b \cf2 ls |head -n 1
+\f1\b0 \cf0  > display 1st lines\
+
+\f0\b \cf2 ls |tail 
+\f1\b0 \cf0 > display last lines\
+
+\f0\b \cf2 ls |tail -n 2 
+\f1\b0 \cf0 > display last lines\
+
+\f0\b \cf2 ls -S >
+\f1\b0 \cf0  list based on 
+\f0\b SIZE
+\f1\b0 \
+
+\f0\b \cf2 ls -t
+\f1\b0 \cf0  > list based on 
+\f0\b time
+\f1\b0 \
+\
+
+\f0\b \cf2 tail -f 
+\f1\b0 \cf0 FILE > tail will 
+\f0\b FOLLOW
+\f1\b0  a file and dispplay a ne wline\
+\
+
+\f0\b \cf2 wc
+\f1\b0 \cf0  FILE > count the numeber of 
+\f0\b WORDS
+\f1\b0  from file\
+
+\f0\b \cf2 wc -l
+\f1\b0 \cf0  FILE > numebr of lines\
+\
+
+\f0\b \cf2 grep
+\f1\b0 \cf0  WORD FILE > search after word in file\
+
+\f0\b \cf2 grep -i
+\f1\b0 \cf0  WORD FILE >  search after word in file
+\f0\b  without sensitive
+\f1\b0 \
+\
+
+\f0\b \cf2 find .
+\f1\b0 \cf0  -> print all files from current directory\
+
+\f0\b \cf2 find . -name '*.log*' 
+\f1\b0 \cf0 -> SEARCH print all files from current directory\
+
+\f0\b \cf2 find . -name '*.log*' exec grep -l curious \{\} \\\'94 
+\f1\b0 \cf0 -> SEARCH for a string \'93curiois\'94 in all files from current directory\
+\
+
+\f0\b \cf2 cat FILE | tr S s 
+\f1\b0 \cf0 > 
+\f0\b replace
+\f1\b0  S with s in FILE\
+\
+
+\f0\b \cf3 <<< OUTPUT REDIRECTION >>>
+\f1\b0 \cf0 \
+
+\f0\b \cf2 > 
+\f1\b0 \cf4  if the file eist will overwritten\cf0 \
+
+\f0\b \cf2 >>
+\f1\b0 \cf0  APPEND output to an existing file\
+
+\f0\b \cf2 echo D*
+\f1\b0 \cf0  show all the files starting with D\
+\
+
+\f0\b \cf2 grep 1978 file.txt 
+\f1\b0 \cf0 -> grep after a string\
+
+\f0\b \cf2 grep 1978 file.txt | sort 
+\f1\b0 \cf0 -> grep after a string and 
+\f0\b sortit
+\f1\b0  \
+
+\f0\b \cf2 grep 1978 file.txt | sort > file2 
+\f1\b0 \cf0 -> grep after a string and 
+\f0\b sortit
+\f1\b0  + add it in new file\
+\
+
+\f0\b \cf2 cut -f 3 file
+\f1\b0 \cf0  -> select 3rd collumn from the file \
+
+\f0\b \cf2 cut -f 3 file | grep 4 | wc -l 
+\f1\b0 \cf0  -> select 3rd collumn from the file + search after 4 + 
+\f0\b WORD COUNT
+\f1\b0 \
+\
+
+\f0\b \cf2 $() 
+\f1\b0 \cf0 -> COMMAND substitution\
+\
+
+\f0\b \cf2 CTRL + R
+\f1\b0 \cf0  -> Reverse search in HISTORY\
+\
+
+\f0\b \cf3 <<< JOBS AND PROCESSES >>>
+\f1\b0 \cf0 \
+
+\f0\b \cf2 Ctrl + Z \cf0 suspend
+\f1\b0  a running job\
+
+\f0\b \cf2 Ctrl + C \cf0 KILL
+\f1\b0   a running job\
+
+\f0\b \cf2 bg
+\f1\b0 \cf0  > start the pricess in background\
+
+\f0\b \cf2 kill %2
+\f1\b0 \cf0  > kill process ID 2\
+\
+
+\f0\b \cf2 ps -e | grep
+\f1\b0 \cf0  calc. > search for process name\
+
+\f0\b \cf2 kill <process no>
+\f1\b0 \cf0 \
+\
+
+\f0\b \cf2 top
+\f1\b0 \cf0  > show processes running\
+\
+
+\f0\b \cf2 alias
+\f1\b0 \cf0  = ALIAS\
+
+\f0\b \cf2 vi .bash_profile
+\f1\b0 \cf0  -> in /Users/user\
+\
+
+\f0\b \cf3 env
+\f1\b0 \cf0 \
+\
+\
+
+\f0\b \cf2 +++ DATA Structures +++
+\f1\b0 \cf0 \
+
+\f0\b \cf3 JSON, YAML, XML 
+\f1\b0 \cf0 \
+!\
+
+\f0\b \cf2 +++ APIs +++\
+
+\f1\b0 \cf0 - APIs can communicate 
+\f0\b SYNChronus
+\f1\b0  and 
+\f0\b ASYNChronous\cf2 \
+\cf3 REST API
+\f1\b0 \cf0 \
+- present uniform access for resources\
+- transported via 
+\f0\b HTTP
+\f1\b0 \
+
+\f0\b \cf3 RPC API
+\f1\b0 \cf0 \
+- remote \'93function\'94 call\
+- resources are abstracted and not directly accesses\
+- 
+\f0\b NETCONF
+\f1\b0  can be used for transport\
+!\
+
+\f0\b \cf3 HTTP components
+\f1\b0 \cf0 \
+- based on
+\f0\b  request and response
+\f1\b0 \
+- 
+\f0\b Headers
+\f1\b0  cary data of the device from where are originates, payload fprmating, AuthC\
+- 
+\f0\b Body
+\f1\b0  include data to be sent: JSON, XML, and others\
+
+\f0\b \cf3 HTTP Actions
+\f1\b0 \cf0 \
+- 
+\f0\b \cf2 GET
+\f1\b0 \cf0  - 
+\f0\b download
+\f1\b0 , used to get data amd is 
+\f0\b RO
+\f1\b0 \
+- 
+\f0\b \cf2 POST
+\f1\b0 \cf0  - 
+\f0\b create
+\f1\b0  new content\
+- 
+\f0\b \cf2 PUT
+\f1\b0 \cf0  - 
+\f0\b modify
+\f1\b0  existing resources\
+- 
+\f0\b \cf2 PATCH
+\f1\b0 \cf0  = PUT\
+- 
+\f0\b \cf2 DELETE\
+- and others\
+!\
+\cf3 HTTP Code reference\cf2 \
+1xx: Informational 
+\f1\b0 \cf4 -> Continue
+\f0\b \cf2 \
+2xx: Success 
+\f1\b0 \cf4 -> Created, Accepted
+\f0\b \cf2 \
+3xx: Riderections
+\f1\b0 \cf4  -> Moved, Found
+\f0\b \cf2 \
+4xx: Client Error
+\f1\b0 \cf4  -> bad Req, Unauthorized, Forbidden
+\f0\b \cf2 \
+5xx: Server errors \
+
+\f1\b0 \cf0 !\
+
+\f0\b \cf2 +++ CURL +++
+\f1\b0 \cf0 \
+
+\f0\b \cf2 curl
+\f1\b0 \cf0  \'97version\
+
+\f0\b \cf2 . ./
+\f1\b0 \cf0 get_token.sh \
+!\
+!\
+
+\f0\b \cf2 +++ SW Life Cycle +++
+\f1\b0 \cf0 \
+
+\f0\b \cf3 1. Waterfall (1990) 
+\f1\b0 \cf0 - Plan, Design, Code, Test, Release, Review\
+
+\f0\b \cf3 2.  <<<<<<Agile (2001) >>>>\
+\cf2 What is scrum\cf3 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb7 \expnd0\expndtw0\kerning0
+- 
+\f1\b0  is a subset of Agile
+\f0\b \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf4 - is an
+\f0\b  
+\f1\b0 \cb7 \expnd0\expndtw0\kerning0
+agile project management framework\
+- people can address complex adaptive problems\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Agile Manifesto 
+\f1\b0 \cf0 \
+	
+\f0\b Individuals and interactions 
+\f1\b0 over process and tools\
+	
+\f0\b Working SW 
+\f1\b0 over comprehensive documentation\
+	
+\f0\b Customer collaboration
+\f1\b0  over contract negociation\
+	
+\f0\b Responding to change o
+\f1\b0 ver following a plan\
+
+\f0\b \cf2 12 principles
+\f1\b0 \cf0 \
+	1. 
+\f0\b Customer satisfaction
+\f1\b0 \
+	2. 
+\f0\b Apply changing requirements
+\f1\b0 , even late in the PJCT\
+	3. 
+\f0\b Deliver working SW frequently
+\f1\b0  - \
+	4. Business peoples and DEvs must 
+\f0\b work/intercact daily
+\f1\b0 \
+	5. Build project arround 
+\f0\b motivated individuals
+\f1\b0 \
+	6. Held 
+\f0\b face-2-face conversation
+\f1\b0  inside DEV Team\
+	7. Working SW is the
+\f0\b  primary measure of progress\
+	8. 
+\f1\b0 Promote 
+\f0\b sustainable DEV\
+	9. Continuos attanetion
+\f1\b0  to technical excelence and good design enhance agility\
+	10. 
+\f0\b Simplicity
+\f1\b0 \
+	11. Best architectures, req and designs emerge from self-organizing teams\
+	12. AT regular intervals, the team 
+\f0\b reflects
+\f1\b0  on how to become more effective, then 
+\f0\b tune and adjust
+\f1\b0 \
+
+\f0\b \cf2 Srum Elements
+\f1\b0 \cf0 \
+	Definition of Done\
+	Sprint Goal\
+
+\f0\b \cf2 Scrum Roles 
+\f1\b0 \cf0 - form SCRUM Team\
+	Product Owner\
+	DEV Team\
+	Scrum Master\
+
+\f0\b \cf2 Events
+\f1\b0 \cf0 \
+	Sprint Planning\
+	Daily Scrum\
+	Sprint Review\
+	Sprint Retrospective\
+	Next Sprint\
+
+\f0\b \cf2 Artifacts
+\f1\b0 \cf0 :\
+	Product Backlog\
+	Sprint Backlog\
+	Increment\
+
+\f0\b \cf2 How Scrum works
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Prodcut Owner
+\f1\b0  will chose a
+\f0\b  Scrum Team
+\f1\b0  and Scrum Team will chose a
+\f0\b  Scrum Master
+\f1\b0 \
+
+\f0\b Product Backlog
+\f1\b0  is produced -> a 
+\f0\b Scrum Sprint
+\f1\b0  will start\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Empiricism
+\f1\b0 \cf0 \
+Scrum is founded on empiricism and is based on 3 pilars: 
+\f0\b Transparancy (all know what is doing)
+\f1\b0 , 
+\f0\b Inspection (check your work)
+\f1\b0  and 
+\f0\b Adaptation (change direction if needed)\
+
+\f1\b0 require
+\f0\b  TRUST
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Frequent inspection and adaptation
+\f1\b0  occurs as work proceeds\
+Outputs are often 
+\f0\b unpredictibile and urepeatable
+\f1\b0 \
+!\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Stacey MAtrix 
+\f1\b0 \cf0 is used to define zones. Scrum thrives in 
+\f0\b \cf2 Complex zone
+\f1\b0 \cf0 \
+
+\f0\b \cf2 Scrum Values
+\f1\b0 \cf0 \
+	
+\f0\b Focus
+\f1\b0 : Product Backlog, Sprint Goals\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 	Respect: 
+\f1\b0 each other, Scrum framework, ORG
+\f0\b \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 	
+\f0\b Openess
+\f1\b0 : Transparency, to new ideas, to collaboration\
+	
+\f0\b Courage
+\f1\b0 : stick to Scrum Frameowrk, \
+	
+\f0\b Commitment
+\f1\b0 \
+!\
+
+\f0\b \cf3 <<<<<< Kanban (1950s) >>>>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf4 - \cb7 \expnd0\expndtw0\kerning0
+is a workflow management method for defining, managing and improving services\
+- is used to implement agile and DevOps software development.\
+- provides a means to vizualize ypur work\
+- developed by Taiichi Ohno in mid 21st century\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf4 Kanban
+\f1\b0 \'a0is primarily concerned with process improvements.\'a0
+\f0\b Scrum
+\f1\b0 \'a0is concerned with getting more work done faster.\cf13 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Basic Principles
+\f1\b0 \cf13 \
+
+\f2\i - Visualize your work\
+- Limit your WIP (Work in Process)
+\f1\i0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+!\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Work processes 
+\f1\b0 \cf0 shoud be optimized to maximize flow, not capacity utilization\
+
+\f0\b \cf2 Little\'92s LAw
+\f1\b0 \cf0  show that response time improves directly with reduction in WIP\
+
+\f0\b \cf2 Value Stream maps
+\f1\b0 \cf0  are tool for identifying waste and quantifying process efficiency\
+!\
+
+\f0\b \cf2 Personal Kanban
+\f1\b0 \cf0 \
+- book \'93
+\f0\b Personal Kanban
+\f1\b0 \'94 om Amazon\
+- tasks are written in cards structured in 3 areas: 
+\f0\b Ready
+\f1\b0 , 
+\f0\b Doing
+\f1\b0 , 
+\f0\b Done
+\f1\b0 \
+- no of tasks in 
+\f0\b Doing are should be 3 - 5
+\f1\b0   = establishing
+\f0\b   WIP limit
+\f1\b0 \
+- apply 
+\f0\b prioritization
+\f1\b0  for tasks in the Doing zone\
+- once Doing is below WIP limit pull new tasks from Ready zone\
+- Blocked tasks can be added into a new zone called 
+\f0\b \cf3 BLOCKED
+\f1\b0 \cf0 \
+- 
+\f0\b Prioritiation
+\f1\b0  and 
+\f0\b panning
+\f1\b0  are sync concepts\
+- 
+\f0\b Prioritization
+\f1\b0  should be done based on 
+\f0\b Importance
+\f1\b0  and 
+\f0\b Urgency 
+\f1\b0 \
+!\
+
+\f0\b \cf2 Team Kanban
+\f1\b0 \cf0 \
+Principles:\
+1. Focus on Quality\
+2. Reduce WIP\
+3. Deliver Often\
+4. Balance Demand Against Throughput\
+5. Prioritize\
+6. Attack Sources of Variability to Improve Predicatbility\
+!\
+
+\f0\b \cf3 <<<<<< Clean Code >>>>
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 TED principle: 
+\f1\b0 Tese, Expressive, Done one thing
+\f0\b \
+DRY
+\f1\b0  - Don\'92t Repeat Yourself -> decrease sihnal noise ratio\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf2 Naming conventions
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Classes: 
+\f1\b0 Noun, Be specific, Avoid generic suffixes\
+
+\f0\b Methods
+\f1\b0 :GetRegisteredUsers, IsValidSumission, GetUser\
+Avoid abbreviations\
+\
+\
+}
